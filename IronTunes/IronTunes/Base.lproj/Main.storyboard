@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="igT-xb-AVy">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOW PLAYING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eo3-n9-uCb">
+                                <rect key="frame" x="241" y="83" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGw-rq-5gQ">
+                                <rect key="frame" x="261" y="112" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbm-4u-Zeb">
+                                <rect key="frame" x="280" y="141" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zm-T0-xFx">
+                                <rect key="frame" x="275" y="330" width="50" height="30"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartSong:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ncz-2e-0Xx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DA7-bx-Bz9">
+                                <rect key="frame" x="275" y="292" width="50" height="30"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playPauseSong:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2Zs-Id-jWb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7zm-T0-xFx" firstAttribute="centerX" secondItem="DA7-bx-Bz9" secondAttribute="centerX" id="894-Og-soc"/>
+                            <constraint firstItem="DA7-bx-Bz9" firstAttribute="top" secondItem="kbm-4u-Zeb" secondAttribute="bottom" constant="130" id="CDg-ui-rFH"/>
+                            <constraint firstItem="kbm-4u-Zeb" firstAttribute="centerX" secondItem="DA7-bx-Bz9" secondAttribute="centerX" id="VLU-cy-Sql"/>
+                            <constraint firstItem="iGw-rq-5gQ" firstAttribute="top" secondItem="Eo3-n9-uCb" secondAttribute="bottom" constant="8" id="VrP-eL-Qzb"/>
+                            <constraint firstItem="7zm-T0-xFx" firstAttribute="top" secondItem="DA7-bx-Bz9" secondAttribute="bottom" constant="8" id="YAv-Xt-eyA"/>
+                            <constraint firstItem="7zm-T0-xFx" firstAttribute="width" secondItem="DA7-bx-Bz9" secondAttribute="width" id="dHB-8Q-WaM"/>
+                            <constraint firstItem="iGw-rq-5gQ" firstAttribute="centerX" secondItem="Eo3-n9-uCb" secondAttribute="centerX" id="fBa-Ig-WYb"/>
+                            <constraint firstAttribute="centerX" secondItem="Eo3-n9-uCb" secondAttribute="centerX" id="fuD-Ys-PFY"/>
+                            <constraint firstItem="kbm-4u-Zeb" firstAttribute="top" secondItem="iGw-rq-5gQ" secondAttribute="bottom" constant="8" id="hal-gO-6VT"/>
+                            <constraint firstItem="Eo3-n9-uCb" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="19" id="kas-3N-Tq1"/>
+                            <constraint firstItem="iGw-rq-5gQ" firstAttribute="centerX" secondItem="kbm-4u-Zeb" secondAttribute="centerX" id="z6N-Qm-U1n"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SPl-yL-cuP"/>
+                    <connections>
+                        <outlet property="artistLabel" destination="kbm-4u-Zeb" id="Vd9-2e-59T"/>
+                        <outlet property="playPauseButton" destination="DA7-bx-Bz9" id="5QX-cS-Unj"/>
+                        <outlet property="restartButton" destination="7zm-T0-xFx" id="Dx3-Bb-D3Y"/>
+                        <outlet property="songTitleLabel" destination="iGw-rq-5gQ" id="Qcj-2b-Weq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1257" y="443"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DN8-Za-XjP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="igT-xb-AVy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="afQ-ZX-Ecp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="OH1-1M-BuK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gV9-Tj-SVN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="584" y="443"/>
+        </scene>
+    </scenes>
+</document>

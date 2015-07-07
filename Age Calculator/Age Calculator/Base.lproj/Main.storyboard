@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="asl-xb-OHC">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2a-rw-lqM">
+                                <rect key="frame" x="80" y="133" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cs2-8W-1yG">
+                                <rect key="frame" x="252" y="476" width="96" height="30"/>
+                                <state key="normal" title="Calculate Age">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateAge:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Kpa-9G-fZf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajl-Nh-DEI">
+                                <rect key="frame" x="255" y="414" width="91" height="30"/>
+                                <state key="normal" title="Set Birthdate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lzI-RU-PYR" kind="show" identifier="setBirthdateSegue" id="bLZ-xD-SbP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9u-i0-Prj">
+                                <rect key="frame" x="422" y="133" width="98" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jvr-OH-qXH">
+                                <rect key="frame" x="268" y="278" width="64" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="f2a-rw-lqM" firstAttribute="centerY" secondItem="D9u-i0-Prj" secondAttribute="centerY" id="4vX-2J-tWb"/>
+                            <constraint firstAttribute="centerX" secondItem="Jvr-OH-qXH" secondAttribute="centerX" id="9u3-CI-oOh"/>
+                            <constraint firstItem="D9u-i0-Prj" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="69" id="CSl-Ve-68J"/>
+                            <constraint firstItem="cs2-8W-1yG" firstAttribute="centerX" secondItem="Ajl-Nh-DEI" secondAttribute="centerX" constant="-0.5" id="Dby-B0-PEB"/>
+                            <constraint firstAttribute="trailing" secondItem="D9u-i0-Prj" secondAttribute="trailing" constant="80" id="Eg6-0t-OSm"/>
+                            <constraint firstItem="cs2-8W-1yG" firstAttribute="top" secondItem="Ajl-Nh-DEI" secondAttribute="bottom" constant="32" id="TuY-Y1-w2P"/>
+                            <constraint firstItem="Ajl-Nh-DEI" firstAttribute="top" secondItem="Jvr-OH-qXH" secondAttribute="bottom" constant="91" id="UVQ-Tj-8L3"/>
+                            <constraint firstAttribute="centerY" secondItem="Jvr-OH-qXH" secondAttribute="centerY" id="b1a-AP-FAc"/>
+                            <constraint firstItem="D9u-i0-Prj" firstAttribute="leading" secondItem="f2a-rw-lqM" secondAttribute="trailing" constant="220" id="gZb-kb-fAU"/>
+                            <constraint firstItem="f2a-rw-lqM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="80" id="jRv-hl-Ptx"/>
+                            <constraint firstItem="f2a-rw-lqM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="69" id="nM4-GN-xaG"/>
+                            <constraint firstItem="Ajl-Nh-DEI" firstAttribute="centerX" secondItem="Jvr-OH-qXH" secondAttribute="centerX" constant="0.5" id="nkz-1N-AjH"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4vX-2J-tWb"/>
+                                <exclude reference="gZb-kb-fAU"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="L9e-xX-1C5"/>
+                    <connections>
+                        <outlet property="age" destination="Jvr-OH-qXH" id="zGg-Hm-Y9Q"/>
+                        <outlet property="calculateAge" destination="cs2-8W-1yG" id="Lxo-O0-gOi"/>
+                        <outlet property="currentDate" destination="D9u-i0-Prj" id="cNS-iu-h1w"/>
+                        <outlet property="datesOfBirth" destination="f2a-rw-lqM" id="Fiz-3t-wur"/>
+                        <outlet property="setBirthdate" destination="Ajl-Nh-DEI" id="Wch-vh-72l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="418"/>
+        </scene>
+        <!--Date Picker View Controller-->
+        <scene sceneID="JnA-r1-1MT">
+            <objects>
+                <viewController id="lzI-RU-PYR" customClass="DatePickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hWm-il-BWO"/>
+                        <viewControllerLayoutGuide type="bottom" id="kCb-sX-1ZC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="12U-To-aOJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Hif-5Y-DhI">
+                                <rect key="frame" x="0.0" y="215" width="600" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="447013177.41735101">
+                                    <!--2015-03-02 18:19:37 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hif-5Y-DhI" firstAttribute="top" secondItem="hWm-il-BWO" secondAttribute="bottom" constant="151" id="4Q9-Lq-df6"/>
+                            <constraint firstItem="Hif-5Y-DhI" firstAttribute="leading" secondItem="12U-To-aOJ" secondAttribute="leading" id="UU5-ha-QzF"/>
+                            <constraint firstAttribute="centerY" secondItem="Hif-5Y-DhI" secondAttribute="centerY" constant="48" id="UYa-0x-nlZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Hif-5Y-DhI" secondAttribute="trailing" id="x7F-3Y-c0R"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UYa-0x-nlZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="Hif-5Y-DhI" id="RlW-gl-FP5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NWo-B1-qn8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1754" y="422"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="L7j-4b-smW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="asl-xb-OHC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dna-SX-uf8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="uR0-IG-5mK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iRh-js-ra0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="445" y="418"/>
+        </scene>
+    </scenes>
+</document>

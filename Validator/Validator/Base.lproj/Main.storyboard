@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pj8-i8-RaZ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Street Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gUu-Xl-MjF">
+                                <rect key="frame" x="33" y="109" width="534" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="yes" keyboardAppearance="alert" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="5R9-yN-xJ7"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="City" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d2i-pt-RZd">
+                                <rect key="frame" x="60" y="146" width="480" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="yes" keyboardAppearance="alert" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="exL-uv-dII"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="State" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UGO-ra-egG">
+                                <rect key="frame" x="79" y="183" width="220" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="CBK-Py-BrH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="a7h-Fz-F8A"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Zip" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Jv-Dt-ZFf">
+                                <rect key="frame" x="307" y="183" width="220" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" keyboardAppearance="alert" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="pHC-ac-mhg"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Phone Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cly-ak-ITC">
+                                <rect key="frame" x="108" y="220" width="384" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" keyboardAppearance="alert" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="mp2-OQ-FWV"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NY7-2z-edg">
+                                <rect key="frame" x="60" y="72" width="480" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="3pN-zy-HOJ"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NY7-2z-edg" firstAttribute="width" secondItem="d2i-pt-RZd" secondAttribute="width" id="1jg-43-E35"/>
+                            <constraint firstItem="UGO-ra-egG" firstAttribute="leading" secondItem="d2i-pt-RZd" secondAttribute="leading" constant="19" id="AHw-jB-kxs"/>
+                            <constraint firstItem="NY7-2z-edg" firstAttribute="centerX" secondItem="cly-ak-ITC" secondAttribute="centerX" id="ECe-bQ-h40"/>
+                            <constraint firstItem="UGO-ra-egG" firstAttribute="top" secondItem="d2i-pt-RZd" secondAttribute="bottom" constant="8" id="Jkd-Kx-UoR"/>
+                            <constraint firstItem="2Jv-Dt-ZFf" firstAttribute="trailing" secondItem="d2i-pt-RZd" secondAttribute="trailing" constant="-13" id="PKa-zu-Fdg"/>
+                            <constraint firstItem="2Jv-Dt-ZFf" firstAttribute="leading" secondItem="UGO-ra-egG" secondAttribute="trailing" constant="8" id="Uvv-tk-SNk"/>
+                            <constraint firstItem="gUu-Xl-MjF" firstAttribute="top" secondItem="NY7-2z-edg" secondAttribute="bottom" constant="8" id="VhD-rm-FAz"/>
+                            <constraint firstItem="UGO-ra-egG" firstAttribute="centerY" secondItem="2Jv-Dt-ZFf" secondAttribute="centerY" id="YOw-5n-aiW"/>
+                            <constraint firstItem="d2i-pt-RZd" firstAttribute="top" secondItem="gUu-Xl-MjF" secondAttribute="bottom" constant="8" id="iWP-kZ-0cu"/>
+                            <constraint firstAttribute="centerX" secondItem="NY7-2z-edg" secondAttribute="centerX" id="j4N-tH-qxi"/>
+                            <constraint firstItem="UGO-ra-egG" firstAttribute="width" secondItem="2Jv-Dt-ZFf" secondAttribute="width" id="lNV-vJ-xSS"/>
+                            <constraint firstItem="NY7-2z-edg" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="ldS-OD-77u"/>
+                            <constraint firstItem="NY7-2z-edg" firstAttribute="centerX" secondItem="gUu-Xl-MjF" secondAttribute="centerX" id="mBA-IT-qCj"/>
+                            <constraint firstItem="NY7-2z-edg" firstAttribute="centerX" secondItem="d2i-pt-RZd" secondAttribute="centerX" id="nAV-Fk-brz"/>
+                            <constraint firstItem="cly-ak-ITC" firstAttribute="top" secondItem="UGO-ra-egG" secondAttribute="bottom" constant="8" id="ntk-kI-dQL"/>
+                            <constraint firstItem="cly-ak-ITC" firstAttribute="width" secondItem="NY7-2z-edg" secondAttribute="width" multiplier="0.8" id="pbq-SQ-eV7"/>
+                            <constraint firstItem="NY7-2z-edg" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="80%" id="q52-PQ-6rf"/>
+                            <constraint firstItem="NY7-2z-edg" firstAttribute="width" secondItem="gUu-Xl-MjF" secondAttribute="width" multiplier="0.9" id="qeG-QN-avZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kCA-8g-lP3"/>
+                    <connections>
+                        <outlet property="cityTextField" destination="d2i-pt-RZd" id="C5Z-ed-suC"/>
+                        <outlet property="nameTextField" destination="NY7-2z-edg" id="Ewe-3F-83y"/>
+                        <outlet property="phoneNumberTextField" destination="cly-ak-ITC" id="F2f-hv-W0T"/>
+                        <outlet property="stateTextField" destination="UGO-ra-egG" id="yky-bk-kDa"/>
+                        <outlet property="streetAddressTextField" destination="gUu-Xl-MjF" id="bLz-CS-giJ"/>
+                        <outlet property="zipTextField" destination="2Jv-Dt-ZFf" id="Nf0-r7-dev"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1266" y="400"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vC4-W0-tk1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pj8-i8-RaZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SgM-uK-ZEi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="pZG-aA-SBq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dun-O1-5x3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="621" y="400"/>
+        </scene>
+    </scenes>
+</document>

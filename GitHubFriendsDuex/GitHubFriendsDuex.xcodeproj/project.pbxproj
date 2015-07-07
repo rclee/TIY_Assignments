@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18E79E961AE5A8DA006848B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E79E951AE5A8DA006848B8 /* main.m */; };
+		18E79E991AE5A8DA006848B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E79E981AE5A8DA006848B8 /* AppDelegate.m */; };
+		18E79E9F1AE5A8DA006848B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E79E9D1AE5A8DA006848B8 /* Main.storyboard */; };
+		18E79EA11AE5A8DA006848B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E79EA01AE5A8DA006848B8 /* Images.xcassets */; };
+		18E79EA41AE5A8DA006848B8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E79EA21AE5A8DA006848B8 /* LaunchScreen.xib */; };
+		18E79EB01AE5A8DA006848B8 /* GitHubFriendsDuexTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E79EAF1AE5A8DA006848B8 /* GitHubFriendsDuexTests.m */; };
+		18E79EBB1AE5AA39006848B8 /* GitFriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E79EBA1AE5AA39006848B8 /* GitFriendsCell.m */; };
+		18E79EBE1AE5AA83006848B8 /* GitFriendsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E79EBD1AE5AA83006848B8 /* GitFriendsCollectionViewController.m */; };
+		18E79EC11AE5AAD5006848B8 /* SearchGitFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E79EC01AE5AAD5006848B8 /* SearchGitFriendsViewController.m */; };
+		18E79EC51AE5BC91006848B8 /* FriendDetialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E79EC41AE5BC91006848B8 /* FriendDetialViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18E79EAA1AE5A8DA006848B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18E79E881AE5A8DA006848B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18E79E8F1AE5A8DA006848B8;
+			remoteInfo = GitHubFriendsDuex;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18E79E901AE5A8DA006848B8 /* GitHubFriendsDuex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubFriendsDuex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E79E941AE5A8DA006848B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E79E951AE5A8DA006848B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18E79E971AE5A8DA006848B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18E79E981AE5A8DA006848B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18E79E9E1AE5A8DA006848B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18E79EA01AE5A8DA006848B8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18E79EA31AE5A8DA006848B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		18E79EA91AE5A8DA006848B8 /* GitHubFriendsDuexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubFriendsDuexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E79EAE1AE5A8DA006848B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E79EAF1AE5A8DA006848B8 /* GitHubFriendsDuexTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitHubFriendsDuexTests.m; sourceTree = "<group>"; };
+		18E79EB91AE5AA39006848B8 /* GitFriendsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitFriendsCell.h; sourceTree = "<group>"; };
+		18E79EBA1AE5AA39006848B8 /* GitFriendsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitFriendsCell.m; sourceTree = "<group>"; };
+		18E79EBC1AE5AA83006848B8 /* GitFriendsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitFriendsCollectionViewController.h; sourceTree = "<group>"; };
+		18E79EBD1AE5AA83006848B8 /* GitFriendsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitFriendsCollectionViewController.m; sourceTree = "<group>"; };
+		18E79EBF1AE5AAD5006848B8 /* SearchGitFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchGitFriendsViewController.h; sourceTree = "<group>"; };
+		18E79EC01AE5AAD5006848B8 /* SearchGitFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchGitFriendsViewController.m; sourceTree = "<group>"; };
+		18E79EC31AE5BC91006848B8 /* FriendDetialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendDetialViewController.h; sourceTree = "<group>"; };
+		18E79EC41AE5BC91006848B8 /* FriendDetialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendDetialViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18E79E8D1AE5A8DA006848B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E79EA61AE5A8DA006848B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18E79E871AE5A8DA006848B8 = {
+			isa = PBXGroup;
+			children = (
+				18E79E921AE5A8DA006848B8 /* GitHubFriendsDuex */,
+				18E79EAC1AE5A8DA006848B8 /* GitHubFriendsDuexTests */,
+				18E79E911AE5A8DA006848B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18E79E911AE5A8DA006848B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18E79E901AE5A8DA006848B8 /* GitHubFriendsDuex.app */,
+				18E79EA91AE5A8DA006848B8 /* GitHubFriendsDuexTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18E79E921AE5A8DA006848B8 /* GitHubFriendsDuex */ = {
+			isa = PBXGroup;
+			children = (
+				18E79E971AE5A8DA006848B8 /* AppDelegate.h */,
+				18E79E981AE5A8DA006848B8 /* AppDelegate.m */,
+				18E79EC21AE5AAE0006848B8 /* View Controllers */,
+				18E79EB91AE5AA39006848B8 /* GitFriendsCell.h */,
+				18E79EBA1AE5AA39006848B8 /* GitFriendsCell.m */,
+				18E79E9D1AE5A8DA006848B8 /* Main.storyboard */,
+				18E79EA01AE5A8DA006848B8 /* Images.xcassets */,
+				18E79EA21AE5A8DA006848B8 /* LaunchScreen.xib */,
+				18E79E931AE5A8DA006848B8 /* Supporting Files */,
+			);
+			path = GitHubFriendsDuex;
+			sourceTree = "<group>";
+		};
+		18E79E931AE5A8DA006848B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18E79E941AE5A8DA006848B8 /* Info.plist */,
+				18E79E951AE5A8DA006848B8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18E79EAC1AE5A8DA006848B8 /* GitHubFriendsDuexTests */ = {
+			isa = PBXGroup;
+			children = (
+				18E79EAF1AE5A8DA006848B8 /* GitHubFriendsDuexTests.m */,
+				18E79EAD1AE5A8DA006848B8 /* Supporting Files */,
+			);
+			path = GitHubFriendsDuexTests;
+			sourceTree = "<group>";
+		};
+		18E79EAD1AE5A8DA006848B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18E79EAE1AE5A8DA006848B8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18E79EC21AE5AAE0006848B8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18E79EBC1AE5AA83006848B8 /* GitFriendsCollectionViewController.h */,
+				18E79EBD1AE5AA83006848B8 /* GitFriendsCollectionViewController.m */,
+				18E79EBF1AE5AAD5006848B8 /* SearchGitFriendsViewController.h */,
+				18E79EC01AE5AAD5006848B8 /* SearchGitFriendsViewController.m */,
+				18E79EC31AE5BC91006848B8 /* FriendDetialViewController.h */,
+				18E79EC41AE5BC91006848B8 /* FriendDetialViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18E79E8F1AE5A8DA006848B8 /* GitHubFriendsDuex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E79EB31AE5A8DA006848B8 /* Build configuration list for PBXNativeTarget "GitHubFriendsDuex" */;
+			buildPhases = (
+				18E79E8C1AE5A8DA006848B8 /* Sources */,
+				18E79E8D1AE5A8DA006848B8 /* Frameworks */,
+				18E79E8E1AE5A8DA006848B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GitHubFriendsDuex;
+			productName = GitHubFriendsDuex;
+			productReference = 18E79E901AE5A8DA006848B8 /* GitHubFriendsDuex.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18E79EA81AE5A8DA006848B8 /* GitHubFriendsDuexTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E79EB61AE5A8DA006848B8 /* Build configuration list for PBXNativeTarget "GitHubFriendsDuexTests" */;
+			buildPhases = (
+				18E79EA51AE5A8DA006848B8 /* Sources */,
+				18E79EA61AE5A8DA006848B8 /* Frameworks */,
+				18E79EA71AE5A8DA006848B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18E79EAB1AE5A8DA006848B8 /* PBXTargetDependency */,
+			);
+			name = GitHubFriendsDuexTests;
+			productName = GitHubFriendsDuexTests;
+			productReference = 18E79EA91AE5A8DA006848B8 /* GitHubFriendsDuexTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18E79E881AE5A8DA006848B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "The Iron Yard";
+				TargetAttributes = {
+					18E79E8F1AE5A8DA006848B8 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					18E79EA81AE5A8DA006848B8 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 18E79E8F1AE5A8DA006848B8;
+					};
+				};
+			};
+			buildConfigurationList = 18E79E8B1AE5A8DA006848B8 /* Build configuration list for PBXProject "GitHubFriendsDuex" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18E79E871AE5A8DA006848B8;
+			productRefGroup = 18E79E911AE5A8DA006848B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18E79E8F1AE5A8DA006848B8 /* GitHubFriendsDuex */,
+				18E79EA81AE5A8DA006848B8 /* GitHubFriendsDuexTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18E79E8E1AE5A8DA006848B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E79E9F1AE5A8DA006848B8 /* Main.storyboard in Resources */,
+				18E79EA41AE5A8DA006848B8 /* LaunchScreen.xib in Resources */,
+				18E79EA11AE5A8DA006848B8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E79EA71AE5A8DA006848B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18E79E8C1AE5A8DA006848B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E79E991AE5A8DA006848B8 /* AppDelegate.m in Sources */,
+				18E79EC51AE5BC91006848B8 /* FriendDetialViewController.m in Sources */,
+				18E79EBE1AE5AA83006848B8 /* GitFriendsCollectionViewController.m in Sources */,
+				18E79EBB1AE5AA39006848B8 /* GitFriendsCell.m in Sources */,
+				18E79EC11AE5AAD5006848B8 /* SearchGitFriendsViewController.m in Sources */,
+				18E79E961AE5A8DA006848B8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E79EA51AE5A8DA006848B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E79EB01AE5A8DA006848B8 /* GitHubFriendsDuexTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18E79EAB1AE5A8DA006848B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18E79E8F1AE5A8DA006848B8 /* GitHubFriendsDuex */;
+			targetProxy = 18E79EAA1AE5A8DA006848B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18E79E9D1AE5A8DA006848B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E79E9E1AE5A8DA006848B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18E79EA21AE5A8DA006848B8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E79EA31AE5A8DA006848B8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18E79EB11AE5A8DA006848B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18E79EB21AE5A8DA006848B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18E79EB41AE5A8DA006848B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GitHubFriendsDuex/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18E79EB51AE5A8DA006848B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GitHubFriendsDuex/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		18E79EB71AE5A8DA006848B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GitHubFriendsDuexTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHubFriendsDuex.app/GitHubFriendsDuex";
+			};
+			name = Debug;
+		};
+		18E79EB81AE5A8DA006848B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GitHubFriendsDuexTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHubFriendsDuex.app/GitHubFriendsDuex";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18E79E8B1AE5A8DA006848B8 /* Build configuration list for PBXProject "GitHubFriendsDuex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E79EB11AE5A8DA006848B8 /* Debug */,
+				18E79EB21AE5A8DA006848B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E79EB31AE5A8DA006848B8 /* Build configuration list for PBXNativeTarget "GitHubFriendsDuex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E79EB41AE5A8DA006848B8 /* Debug */,
+				18E79EB51AE5A8DA006848B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18E79EB61AE5A8DA006848B8 /* Build configuration list for PBXNativeTarget "GitHubFriendsDuexTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E79EB71AE5A8DA006848B8 /* Debug */,
+				18E79EB81AE5A8DA006848B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18E79E881AE5A8DA006848B8 /* Project object */;
+}

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Zs6-dd-vEm">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Counter Main Table View Controller-->
+        <scene sceneID="ymx-A2-oa5">
+            <objects>
+                <tableViewController id="a05-Jd-ga4" customClass="CounterMainTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="Rks-pq-xGJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.9978471314441999" blue="0.96499464781102917" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StepperCell" rowHeight="100" id="OdX-do-LhF" customClass="StepperTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OdX-do-LhF" id="2uJ-4H-9BC">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="5gm-6h-B8d">
+                                            <rect key="frame" x="474" y="35" width="94" height="29"/>
+                                            <color key="backgroundColor" red="0.58514975389872614" green="0.6476818199647032" blue="0.64906881313131315" alpha="0.27000000000000002" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.98763020833333337" green="0.98763020833333337" blue="0.98763020833333337" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="stepperValueChanged:" destination="OdX-do-LhF" eventType="touchUpInside" id="Pfq-DD-cmn"/>
+                                            </connections>
+                                        </stepper>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Label" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kNn-dh-P01">
+                                            <rect key="frame" x="8" y="36" width="110" height="27"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="110" id="2ck-aV-HUZ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="yes" keyboardAppearance="alert"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="a05-Jd-ga4" id="Eld-vo-5uh"/>
+                                            </connections>
+                                        </textField>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnl-gN-R4V">
+                                            <rect key="frame" x="138" y="-2" width="316" height="103"/>
+                                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="90"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.6198314678908049" green="0.65973710047043743" blue="0.66585779671717171" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="5gm-6h-B8d" secondAttribute="trailing" constant="32" id="2mV-bW-sWG"/>
+                                        <constraint firstItem="5gm-6h-B8d" firstAttribute="leading" secondItem="bnl-gN-R4V" secondAttribute="trailing" constant="20" id="4YJ-Js-aZe"/>
+                                        <constraint firstAttribute="centerY" secondItem="kNn-dh-P01" secondAttribute="centerY" id="9i6-Ri-T12"/>
+                                        <constraint firstItem="kNn-dh-P01" firstAttribute="top" secondItem="2uJ-4H-9BC" secondAttribute="top" constant="36" id="KSc-4W-mdd"/>
+                                        <constraint firstItem="5gm-6h-B8d" firstAttribute="centerY" secondItem="bnl-gN-R4V" secondAttribute="centerY" id="XiG-pI-N3n"/>
+                                        <constraint firstItem="bnl-gN-R4V" firstAttribute="centerY" secondItem="kNn-dh-P01" secondAttribute="centerY" id="Zs4-Jd-tD8"/>
+                                        <constraint firstItem="bnl-gN-R4V" firstAttribute="leading" secondItem="kNn-dh-P01" secondAttribute="trailing" constant="20" id="bVu-ia-6q4"/>
+                                        <constraint firstAttribute="bottom" secondItem="kNn-dh-P01" secondAttribute="bottom" constant="33" id="qIu-q1-BBq"/>
+                                        <constraint firstItem="kNn-dh-P01" firstAttribute="leading" secondItem="2uJ-4H-9BC" secondAttribute="leading" constant="8" id="xjF-l9-c7K"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="KSc-4W-mdd"/>
+                                            <exclude reference="qIu-q1-BBq"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="stepper" destination="5gm-6h-B8d" id="MfG-6I-XDW"/>
+                                    <outlet property="stepperCountLabel" destination="bnl-gN-R4V" id="RUF-6e-EXJ"/>
+                                    <outlet property="stepperTextField" destination="kNn-dh-P01" id="hfN-6R-2S2"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="a05-Jd-ga4" id="sAK-oa-rU9"/>
+                            <outlet property="delegate" destination="a05-Jd-ga4" id="dx3-u3-XnS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="MVV-lg-Zqg">
+                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="m1G-iO-lhn">
+                            <color key="tintColor" red="0.52657433712121215" green="0.12155896107441279" blue="0.12073894444182212" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="ClearAll:" destination="a05-Jd-ga4" id="hPX-Jj-Zw4"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="znb-ZC-x8W">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="addStepper:" destination="a05-Jd-ga4" id="NhN-WJ-yBD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OmK-co-wXV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1129" y="407"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iIz-58-1ni">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zs6-dd-vEm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="n13-UY-9Bw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="a05-Jd-ga4" kind="relationship" relationship="rootViewController" id="RPu-zB-SML"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fbo-lg-Mw4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="408"/>
+        </scene>
+    </scenes>
+</document>

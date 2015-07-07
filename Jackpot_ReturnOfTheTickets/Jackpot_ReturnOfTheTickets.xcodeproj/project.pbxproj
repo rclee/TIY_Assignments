@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18B12F031AE813DD005938F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B12F021AE813DD005938F1 /* main.m */; };
+		18B12F061AE813DD005938F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B12F051AE813DD005938F1 /* AppDelegate.m */; };
+		18B12F0C1AE813DD005938F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B12F0A1AE813DD005938F1 /* Main.storyboard */; };
+		18B12F0E1AE813DD005938F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B12F0D1AE813DD005938F1 /* Images.xcassets */; };
+		18B12F111AE813DD005938F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B12F0F1AE813DD005938F1 /* LaunchScreen.xib */; };
+		18B12F1D1AE813DD005938F1 /* Jackpot_ReturnOfTheTicketsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B12F1C1AE813DD005938F1 /* Jackpot_ReturnOfTheTicketsTests.m */; };
+		18B12F281AE814E4005938F1 /* TicketsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B12F271AE814E4005938F1 /* TicketsTableViewController.m */; };
+		18B12F2C1AE81628005938F1 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B12F2B1AE81628005938F1 /* Ticket.m */; };
+		18B12F301AE84131005938F1 /* CheckWinnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B12F2F1AE84131005938F1 /* CheckWinnerViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18B12F171AE813DD005938F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B12EF51AE813DD005938F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B12EFC1AE813DD005938F1;
+			remoteInfo = Jackpot_ReturnOfTheTickets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18B12EFD1AE813DD005938F1 /* Jackpot_ReturnOfTheTickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jackpot_ReturnOfTheTickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B12F011AE813DD005938F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B12F021AE813DD005938F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18B12F041AE813DD005938F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18B12F051AE813DD005938F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18B12F0B1AE813DD005938F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18B12F0D1AE813DD005938F1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18B12F101AE813DD005938F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		18B12F161AE813DD005938F1 /* Jackpot_ReturnOfTheTicketsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Jackpot_ReturnOfTheTicketsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B12F1B1AE813DD005938F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B12F1C1AE813DD005938F1 /* Jackpot_ReturnOfTheTicketsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Jackpot_ReturnOfTheTicketsTests.m; sourceTree = "<group>"; };
+		18B12F261AE814E4005938F1 /* TicketsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketsTableViewController.h; sourceTree = "<group>"; };
+		18B12F271AE814E4005938F1 /* TicketsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketsTableViewController.m; sourceTree = "<group>"; };
+		18B12F2A1AE81628005938F1 /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
+		18B12F2B1AE81628005938F1 /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
+		18B12F2E1AE84131005938F1 /* CheckWinnerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckWinnerViewController.h; sourceTree = "<group>"; };
+		18B12F2F1AE84131005938F1 /* CheckWinnerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckWinnerViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18B12EFA1AE813DD005938F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B12F131AE813DD005938F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18B12EF41AE813DD005938F1 = {
+			isa = PBXGroup;
+			children = (
+				18B12EFF1AE813DD005938F1 /* Jackpot_ReturnOfTheTickets */,
+				18B12F191AE813DD005938F1 /* Jackpot_ReturnOfTheTicketsTests */,
+				18B12EFE1AE813DD005938F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18B12EFE1AE813DD005938F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18B12EFD1AE813DD005938F1 /* Jackpot_ReturnOfTheTickets.app */,
+				18B12F161AE813DD005938F1 /* Jackpot_ReturnOfTheTicketsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18B12EFF1AE813DD005938F1 /* Jackpot_ReturnOfTheTickets */ = {
+			isa = PBXGroup;
+			children = (
+				18B12F041AE813DD005938F1 /* AppDelegate.h */,
+				18B12F051AE813DD005938F1 /* AppDelegate.m */,
+				18B12F2D1AE8162E005938F1 /* Model Objects */,
+				18B12F291AE814FD005938F1 /* ViewControllers */,
+				18B12F0A1AE813DD005938F1 /* Main.storyboard */,
+				18B12F0D1AE813DD005938F1 /* Images.xcassets */,
+				18B12F0F1AE813DD005938F1 /* LaunchScreen.xib */,
+				18B12F001AE813DD005938F1 /* Supporting Files */,
+			);
+			path = Jackpot_ReturnOfTheTickets;
+			sourceTree = "<group>";
+		};
+		18B12F001AE813DD005938F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18B12F011AE813DD005938F1 /* Info.plist */,
+				18B12F021AE813DD005938F1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18B12F191AE813DD005938F1 /* Jackpot_ReturnOfTheTicketsTests */ = {
+			isa = PBXGroup;
+			children = (
+				18B12F1C1AE813DD005938F1 /* Jackpot_ReturnOfTheTicketsTests.m */,
+				18B12F1A1AE813DD005938F1 /* Supporting Files */,
+			);
+			path = Jackpot_ReturnOfTheTicketsTests;
+			sourceTree = "<group>";
+		};
+		18B12F1A1AE813DD005938F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18B12F1B1AE813DD005938F1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18B12F291AE814FD005938F1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				18B12F261AE814E4005938F1 /* TicketsTableViewController.h */,
+				18B12F271AE814E4005938F1 /* TicketsTableViewController.m */,
+				18B12F2E1AE84131005938F1 /* CheckWinnerViewController.h */,
+				18B12F2F1AE84131005938F1 /* CheckWinnerViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		18B12F2D1AE8162E005938F1 /* Model Objects */ = {
+			isa = PBXGroup;
+			children = (
+				18B12F2A1AE81628005938F1 /* Ticket.h */,
+				18B12F2B1AE81628005938F1 /* Ticket.m */,
+			);
+			name = "Model Objects";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18B12EFC1AE813DD005938F1 /* Jackpot_ReturnOfTheTickets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B12F201AE813DD005938F1 /* Build configuration list for PBXNativeTarget "Jackpot_ReturnOfTheTickets" */;
+			buildPhases = (
+				18B12EF91AE813DD005938F1 /* Sources */,
+				18B12EFA1AE813DD005938F1 /* Frameworks */,
+				18B12EFB1AE813DD005938F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jackpot_ReturnOfTheTickets;
+			productName = Jackpot_ReturnOfTheTickets;
+			productReference = 18B12EFD1AE813DD005938F1 /* Jackpot_ReturnOfTheTickets.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18B12F151AE813DD005938F1 /* Jackpot_ReturnOfTheTicketsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B12F231AE813DD005938F1 /* Build configuration list for PBXNativeTarget "Jackpot_ReturnOfTheTicketsTests" */;
+			buildPhases = (
+				18B12F121AE813DD005938F1 /* Sources */,
+				18B12F131AE813DD005938F1 /* Frameworks */,
+				18B12F141AE813DD005938F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B12F181AE813DD005938F1 /* PBXTargetDependency */,
+			);
+			name = Jackpot_ReturnOfTheTicketsTests;
+			productName = Jackpot_ReturnOfTheTicketsTests;
+			productReference = 18B12F161AE813DD005938F1 /* Jackpot_ReturnOfTheTicketsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18B12EF51AE813DD005938F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "The Iron Yard";
+				TargetAttributes = {
+					18B12EFC1AE813DD005938F1 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					18B12F151AE813DD005938F1 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 18B12EFC1AE813DD005938F1;
+					};
+				};
+			};
+			buildConfigurationList = 18B12EF81AE813DD005938F1 /* Build configuration list for PBXProject "Jackpot_ReturnOfTheTickets" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18B12EF41AE813DD005938F1;
+			productRefGroup = 18B12EFE1AE813DD005938F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18B12EFC1AE813DD005938F1 /* Jackpot_ReturnOfTheTickets */,
+				18B12F151AE813DD005938F1 /* Jackpot_ReturnOfTheTicketsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18B12EFB1AE813DD005938F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B12F0C1AE813DD005938F1 /* Main.storyboard in Resources */,
+				18B12F111AE813DD005938F1 /* LaunchScreen.xib in Resources */,
+				18B12F0E1AE813DD005938F1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B12F141AE813DD005938F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18B12EF91AE813DD005938F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B12F2C1AE81628005938F1 /* Ticket.m in Sources */,
+				18B12F061AE813DD005938F1 /* AppDelegate.m in Sources */,
+				18B12F301AE84131005938F1 /* CheckWinnerViewController.m in Sources */,
+				18B12F031AE813DD005938F1 /* main.m in Sources */,
+				18B12F281AE814E4005938F1 /* TicketsTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B12F121AE813DD005938F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B12F1D1AE813DD005938F1 /* Jackpot_ReturnOfTheTicketsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18B12F181AE813DD005938F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B12EFC1AE813DD005938F1 /* Jackpot_ReturnOfTheTickets */;
+			targetProxy = 18B12F171AE813DD005938F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18B12F0A1AE813DD005938F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B12F0B1AE813DD005938F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18B12F0F1AE813DD005938F1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B12F101AE813DD005938F1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18B12F1E1AE813DD005938F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18B12F1F1AE813DD005938F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18B12F211AE813DD005938F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Jackpot_ReturnOfTheTickets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18B12F221AE813DD005938F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Jackpot_ReturnOfTheTickets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		18B12F241AE813DD005938F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Jackpot_ReturnOfTheTicketsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jackpot_ReturnOfTheTickets.app/Jackpot_ReturnOfTheTickets";
+			};
+			name = Debug;
+		};
+		18B12F251AE813DD005938F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Jackpot_ReturnOfTheTicketsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jackpot_ReturnOfTheTickets.app/Jackpot_ReturnOfTheTickets";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18B12EF81AE813DD005938F1 /* Build configuration list for PBXProject "Jackpot_ReturnOfTheTickets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B12F1E1AE813DD005938F1 /* Debug */,
+				18B12F1F1AE813DD005938F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B12F201AE813DD005938F1 /* Build configuration list for PBXNativeTarget "Jackpot_ReturnOfTheTickets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B12F211AE813DD005938F1 /* Debug */,
+				18B12F221AE813DD005938F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18B12F231AE813DD005938F1 /* Build configuration list for PBXNativeTarget "Jackpot_ReturnOfTheTicketsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B12F241AE813DD005938F1 /* Debug */,
+				18B12F251AE813DD005938F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18B12EF51AE813DD005938F1 /* Project object */;
+}
